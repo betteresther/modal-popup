@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL POP-UP</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- <button id="modal-open"> CONTACT US</button> -->
+    <button type="button" class="btn btn-primary" id="modal-open" onclick="OpenModal()"  data-target="#myModal">
+        CONTACT US
+      </button>
+
+    <div class="modal" id="myModal">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <a href="javascript:void(0)" onclick="CloseModal()"> <span class="modal-close">&times;</span></a>
+                <h2> DRESSS_FOR_LESS STORE</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Send us a Message</h4>
+                    <form>
+                    <div class="form-group">
+                        <label for="Firstname">First Name</label>
+                        <input type="text" placeholder="Enter your First Name" id="first">
+                      </div>
+                    <div class="form-group">
+                        <label for="Lastname">Last Name</label>
+                        <input type="email" placeholder="Enter your Last Name" id="last">
+                      </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" placeholder="Enter email" id="email">
+                      </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="email" placeholder="Enter your message here"></textarea>
+                      </div>
+                      <input type="submit" value="Send Message" id="submit">
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <h3>DRESSS_FOR_LESS STORE &copy; 2022 </h3>
+                  </div>
+
+                  </div>
+                  </div>
+
+
+
+
+
+
+                  
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        onPageOpen();
+});
+</script>
+</body>
+</html>
